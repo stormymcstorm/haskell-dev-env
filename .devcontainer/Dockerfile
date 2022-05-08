@@ -76,7 +76,8 @@ RUN cabal install --haddock-hoogle \
     stylish-haskell-0.13.0.0 \
     hoogle-5.0.18.3 \
     ormolu-0.1.3.1 \
-    liquidhaskell-0.8.10.2
+    liquidhaskell-0.8.10.2 \
+    brittany-0.13.1.2
 
 # Generate hoogle db
 RUN hoogle generate && stack hoogle

@@ -4,16 +4,19 @@
     "dockerfile": "Dockerfile",
     "context": "..",
     "args": {
+      "USERNAME": "vscode",
+      "USER_UID": "1000",
+      "USER_GID": "1000",
       "GHC_VERSION": "8.10.7",
-      "STACK_RESOLVER": "lts-18.13",
-      "STACK_VERSION": "2.7.5",
+      "HLS_VERSION": "1.6.1.0",
       "CABAL_VERSION": "3.6.2.0",
-      "HLS_VERSION": "1.6.1.0"
+      "STACK_VERSION": "2.7.5",
+      "STACK_RESOLVER": "lts-18.13",
     }
   },
   "runArgs": [],
   "settings": {
-    "haskell.formattingProvider": "ormolu",
+    "haskell.formattingProvider": "brittany",
     "haskell.openDocumentationInHackage": false,
     "haskell.openSourceInHackage": false,
     "haskell.trace.server": "off",
